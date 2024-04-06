@@ -1,9 +1,4 @@
 localhost {
-    root * /path/to/react-app/build
-    file_server
-
-    reverse_proxy /api/*  {
-        to example.com example2.com
+    reverse_proxy example.com example2.com
         lb_policy first
-    }
 }
